@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:layout_gravity="center">
+                <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/imageView" android:src="@drawable/fp_sdraw"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/version"
+                        android:id="@+id/textView" android:textStyle="bold"
+                        android:textSize="20dp" android:layout_gravity="center" android:layout_marginLeft="35dp"/>
+            </LinearLayout>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Простая программа-рисовалка для Android предоставит Вам возможность максимально быстро и удобно нарисовать что-угодно! (как на листке бумаги). Программа на 100% использует полезную площадь экрана, имеет массу настроек и возможностей, а главное - работает максимально быстро на любых устройствах."
+                    android:id="@+id/textView1" android:layout_marginTop="18dp"/>
+
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:layout_gravity="center" android:padding="0dp"
+                    android:baselineAligned="false" android:layout_marginTop="30dp">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView02" android:src="@drawable/gestures"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Жесты"
+                        android:id="@+id/textView04"
+                        android:layout_marginTop="0dp"
+                        android:textStyle="bold" android:layout_gravity="center" android:layout_marginLeft="30dp"/>
+            </LinearLayout>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Для быстрого доступа к некоторым функциям Вы можете воспользоваться жестами. Для этого зажмите кнопку Громкость- и выполните жест:"
+                    android:id="@+id/textView05" android:layout_marginTop="7dp"/>
+            <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView01" android:src="@drawable/help_swipes" android:padding="0dp"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="7dp"/>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-Свайпните влево для отмены действия"
+                    android:id="@+id/textView05" android:layout_marginTop="5dp"/>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-Свайпните вправо для повтора отмененнного действия"
+                    android:id="@+id/textView05" android:layout_marginTop="5dp"/>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-Свайпните вниз для очистки рисунка"
+                    android:id="@+id/textView05" android:layout_marginTop="5dp"/>
+
+
+
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:layout_gravity="center" android:padding="0dp"
+                    android:baselineAligned="false" android:layout_marginTop="30dp">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView2" android:src="@drawable/help_icon"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Как пользоваться?"
+                        android:id="@+id/textView4"
+                        android:layout_marginTop="0dp"
+                        android:textStyle="bold" android:layout_gravity="center" android:layout_marginLeft="30dp"/>
+            </LinearLayout>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="После открытия программы Вы сможете сразу же приступить к рисованию! Для работы с функционалом программы рассмотрим предназначение кнопок..."
+                    android:id="@+id/textView5" android:layout_marginTop="7dp"/>
+            <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView1" android:src="@drawable/s1" android:padding="0dp"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="7dp"/>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(1)  кнопка увеличения громкости позволит Вам быстро использовать ластик в процессе рисования. Для активации ластика просто зажмите эту кнопку. Ластик будет активен пока Вы не отпустите кнопку. Отпустив кнопку Вы можете продолжить рисование кистью."
+                    android:id="@+id/textView5" android:layout_marginTop="5dp"/>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(2)  кнопка уменьшения громкости позволит Вам использовать жесты. Для этого зажмите кнопку и следуйте экранным подсказкам."
+                    android:id="@+id/textView5" android:layout_marginTop="5dp"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView3" android:src="@drawable/s2" android:adjustViewBounds="true"
+                    android:layout_marginTop="20dp"/>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+                      android:text="(3)  кнопка меню откроет Вам доступ к дополнительному функционалу, такому как настройки, справка, сохранение рисунка и прочее, а также позволит вручную включить\\выключить ластик и очистить рисунок."
+                      android:id="@+id/textView6" android:layout_marginTop="5dp"/>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+                      android:text="(4)  кнопка назад позволяет выйти из программы или экрана справки\\настройки. Для выхода из программы дважды быстро нажмите &quot;назад&quot;."
+                      android:id="@+id/textView6" android:layout_marginTop="5dp"/>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+                      android:text="Рассмотрим меню программы:" android:id="@+id/textView8" android:layout_marginTop="15dp"
+                      android:textStyle="bold" android:textSize="17dp"/>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+                      android:text="@string/help_menu"
+                      android:id="@+id/textView7" android:layout_marginTop="5dp"/>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Разработчик: Dr. Failov\n\nТестирование: Messer, nikolasbrind\n\nВ программе использованы иконки Onebit"
+                    android:id="@+id/textView2" android:layout_marginTop="18dp" android:textStyle="bold"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fsoft Production 2013"
+                    android:id="@+id/textView3" android:layout_marginTop="26dp" android:layout_gravity="right"/>
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OK"
+                    android:id="@+id/button_OK" android:layout_marginTop="29dp" android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp" android:clickable="true" android:onClick="onClick"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
